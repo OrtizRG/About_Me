@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  body {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    background-color: lightgrey;
+  }
+
+ 
+  
+   
+  
+  /* HEADER / NAV BAR STYLES START */
+  
+  header {
+    padding: 19px 1px 19px 0px;
+    background-color: #434169;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 45px;
+    background-color:rgb(176, 209, 252);
+        padding: 3px 12px 0px 25px;
+        background-image: url(../images/Peggy.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: darkblue;
+    padding-left: 25px;
+    
+  }
+  
+  header nav {
+    margin: 15px 0;
+    text-decoration-line: underline;
+    
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-right: 9px;
+  }
+  
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.3vw;
+    color:azure
+  }
+  
+
+ .navigation {
+    text-indent: -45px;
+    display: flex;
+    flex-wrap: wrap; 
+    line-height: 1.3em;
+    margin-top: 20px;
+     } 
+
+  /* HEADER / NAVBAR STYLES END */
+
+  /* HERO STYLES START */
+.hero {
+    height: 150px;
+    background-image: url('../images/galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 75px;
+    padding-inline-end: 30px;
+
+     }
+
+     p {
+    color:darkblue;
+    font-weight: bold;
+    background-color:rgb(176, 252, 252);
+    }
+
+.flex-row {
+        display: block;
+        border-color:darkblue;
+      }
+
+.flex-row p {
+    color:darkblue;
+    background-color: lightgrey;
+    font-size:12px;
+    text-align: initial;
+    padding-left: 30px;
+    font-weight: bolder;
+    word-spacing: 5px;
+    display: contents;
+}
+
+.intro {
+    padding: 0px 0px 0px 0px;
+}
+
+
+.leftcolumn {
+    font-size: 30px;
+    padding: 0px 10px 5px 0px;
+    border-right: 3px solid darkblue;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.container {
+    column-width: 250px;
+    column-gap: 20px;
+    padding: 20px 05px 18px 23px;
+    position: absolute;
+  }
+  
+  #big, .card{
+    column-width: relative;
+      column-span: all;
+      height: 200px;
+      position: relative;
+
+  }
+
+  #small, .card{
+    column-width: relative;
+      column-span: all;
+      height: 100px;
+      position: relative;
+
+  }
+  .card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background-image: url(http://clipart-library.com/images_k/cats-transparent-background/cats-transparent-background-4.png);
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    border: 2px solid rgb(79, 185, 227);
+    background-color:aliceblue;
+    padding: 0px;
+    margin: 0 0 0em 0em;
+    position:relative;
+    display:flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px #434169;
+    
+  }
+
+ .card h3 {
+     color: blue;
+     position: absolute;
+     bottom: 10px;
+     background-color: grey;
+     padding: 5px;
+
+     
+ } 
+
+ .cardsmall h3 {
+  color:blue;
+  position: absolute;
+  bottom: 10px;
+  background-color: grey;
+  padding: 5px;
+
+  
+} 
+
+.cardsmall {
+  position:relative;
+  break-inside: avoid;
+  page-break-inside: inherit;
+  background-image: url('../images/Opie.jpg');
+  background-position: right;
+  background-color:aliceblue;
+  border: 2px solid rgb(79, 185, 227);
+  padding: 38px 79px 0px 0px;
+  margin: 1em 0em 0em 0;
+  height: 84px;
+  position:relative;
+  display:grid;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px #434169;
+  
+}
+ 
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.aboutmetbl {
+  border-spacing: 49px 27px;
+ }
+
+ .contactme {
+   text-align:center;
+ }
+
+ tr {
+   flex-wrap:wrap;
+ }
+
+ @media (min-width: 300px) { .cardsmall { flex: 1 0 31%; } }
