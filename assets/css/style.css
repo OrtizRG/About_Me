@@ -151,11 +151,10 @@
   .card {
     break-inside: avoid;
     page-break-inside: avoid;
-    background-image: url(http://clipart-library.com/images_k/cats-transparent-background/cats-transparent-background-4.png);
-    background-repeat: no-repeat;
+    background-image: url('../images/cats.png');
+    background-repeat: round;
     background-position-x: center ;
     border: 2px solid rgb(79, 185, 227);
-    background-color:aliceblue;
     padding: 0px;
     margin: 0 0 0em 0em;
     position:relative;
