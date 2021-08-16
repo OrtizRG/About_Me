@@ -188,7 +188,8 @@
   position:relative;
   break-inside: avoid;
   page-break-inside: inherit;
-  background-image: url('../images/Opie.jpg');
+  background-image: url('../images/jax.jpg');
+  background-size: contain;
   background-position: right;
   background-color:aliceblue;
   border: 2px solid rgb(79, 185, 227);
